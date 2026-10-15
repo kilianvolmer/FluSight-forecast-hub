@@ -24,8 +24,7 @@ jobs:
 
           # clear target (keep .git), then copy each requested folder
           mkdir -p target/target-data
-            cp -r target-data/*.csv target/target-data
-          done
+          cp -r target-data/*.csv target/target-data
           cd target
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
