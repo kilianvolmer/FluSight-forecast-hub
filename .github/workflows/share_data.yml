@@ -23,8 +23,8 @@ jobs:
           git clone --depth 1 "https://x-access-token:${TOKEN}@github.com/${{ matrix.target_repo }}.git" target
 
           # clear target (keep .git), then copy each requested folder
-          mkdir -p "target/target-data"
-            cp -r "target-data/*.csv" "target/target-data"
+          mkdir -p target/target-data
+            cp -r target-data/*.csv target/target-data
           done
           cd target
           git config user.name "github-actions[bot]"
